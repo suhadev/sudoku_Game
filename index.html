@@ -1,0 +1,332 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        .gameArea {
+            height: 80%;
+            width: 80%;
+            margin-bottom: 10%;
+            padding: 0%;
+        }
+
+        input[data-group="group1"] {
+            border: 1px solid blue;
+        }
+
+        input[data-group="group2"] {
+            border: 1px solid black;
+        }
+
+        input[data-group="group3"] {
+            border: 1px solid blue;
+        }
+
+        input[data-group="group4"] {
+            border: 1px solid black;
+        }
+        input[data-group="group5"] {
+            border: 1px solid blue;
+        }
+        input[data-group="group6"] {
+            border: 1px solid black;
+        }
+        input[data-group="group7"] {
+            border: 1px solid blue;
+        }
+        input[data-group="group8"] {
+            border: 1px solid black;
+        }
+        input[data-group="group9"] {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="collg-12">
+                <h3>Sudoku</h3>
+            </div>
+        </div>
+
+        <div class="gameArea">
+            <div class="group1">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group1" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group1" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group1" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group1" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group1" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group1" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group1" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group1" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group1" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group2" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group2" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group2" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group2" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group2" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group2" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group2" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group2" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group2" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group3" data-colGroup="group1">
+
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group3" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group1" data-rowGroup="group3" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group3" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group3" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group2" data-rowGroup="group3" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group3" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group3" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group3" data-rowGroup="group3" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group4" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group4" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group4" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group4" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group4" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group4" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group4" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group4" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group4" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group5" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group5" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group5" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group5" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group5" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group5" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group5" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group5" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group5" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group6" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group6" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group4" data-rowGroup="group6" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group6" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group6" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group5" data-rowGroup="group6" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group6" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group6" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group6" data-rowGroup="group6" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group7" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group7" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group7" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group7" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group7" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group7" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group7" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group7" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group7" data-colGroup="group9">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group8" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group8" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group8" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group8" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group8" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group8" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group8" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group8" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group8" data-colGroup="group9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group9" data-colGroup="group1">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group9" data-colGroup="group2">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group7" data-rowGroup="group9" data-colGroup="group3">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group9" data-colGroup="group4">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group9" data-colGroup="group5">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group8" data-rowGroup="group9" data-colGroup="group6">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group9" data-colGroup="group7">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group9" data-colGroup="group8">
+                </div>
+                <div class="col-lg-1">
+                    <input type="text" data-group="group9" data-rowGroup="group9" data-colGroup="group9">
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
